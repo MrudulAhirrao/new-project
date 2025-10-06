@@ -1,44 +1,11 @@
-<!doctype html>
-<html lang="en">
+<?php
+    // --- Page-specific variables for SEO ---
+    $pageTitle = "JEE Counsellor for Engineering Admissions | V4Edu Solution";
+    $metaDescription = "Expert JEE counselling for B.Tech and M.Tech admissions in IIT, NIT, and top private universities across India. Secure your seat with our 23+ years of experience.";
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="JEE Counsellor Engineering Admissions" />
-    <meta property="og:description"
-        content="With over 23 years of expertise, our team of 25+ experienced JEE counsellors." />
-    <meta property="og:image" content="https://v4edusolution.com/img/logo.png" />
-    <meta property="og:url" content="https://v4edusolution.com/" />
-    <meta property="og:url" content="https://v4edusolution.com" />
-    <meta property="og:type" content="website" />
-    <title>JEE Counsellor Engineering Admissions</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-
-
-</head>
-
-<body>
-    <!-- loader  -->
-    <div class="loader-wrapper" style="display: none;">
-        <div class="loader">
-            <img src="img/logo.png" alt="">
-        </div>
-    </div>
-
-    <?php include('include/header.php'); ?>
+    // --- Include the master header ---
+    include __DIR__ . '/../includes/header.php';
+?>
 
     <!-- hero section -->
     <div class="heroSection">
@@ -46,7 +13,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="heroBox">
-                        <img src="img/reviewImg.png" alt="" class="reviewCounterImg">
+                        <img src="../assets/img/reviewImg.png" alt="" class="reviewCounterImg">
                         <h1 class="webHeroTitle">JEE Counsellor Engg Admissions</h1>
                         <p class="webHeroText">25+ JEE Expert Counsellors | 23+ Years of Experience | One Mission -
                             Your Success</p>
@@ -66,7 +33,7 @@
                             <strong class="number-text"> 35000+</strong>
                             Admissions
                         </div>
-                        <img src="img/heroImg.png" alt="">
+                        <img src="../assets/img/heroImg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -113,7 +80,7 @@
             <div class="section">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <img src="img/counsellor-icon.png" alt="">
+                        <img src="../assets/img/counsellor-icon.png" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="counsellor-text">
@@ -266,7 +233,7 @@
                         </p>
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-1.png" alt="Step 1 Illustration">
+                        <img src="../assets/img/courses-1.png" alt="Step 1 Illustration">
                     </div>
                 </div>
                 <!-- Step 2 -->
@@ -287,7 +254,7 @@
 
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-2.png" alt="Step 2 Illustration">
+                        <img src="../assets/img/courses-2.png" alt="Step 2 Illustration">
                     </div>
                 </div>
                 <!-- Step 3 -->
@@ -306,7 +273,7 @@
                         </p>
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-3.png" alt="Step 3 Illustration">
+                        <img src="../assets/img/courses-3.png" alt="Step 3 Illustration">
                     </div>
                 </div>
                 <!-- Step 4 -->
@@ -325,7 +292,7 @@
                         </p>
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-4.png" alt="Step 4 Illustration">
+                        <img src="../assets/img/courses-4.png" alt="Step 4 Illustration">
                     </div>
                 </div>
                 <!-- Step 5 -->
@@ -346,7 +313,7 @@
                         </p>
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-5.png" alt="Step 4 Illustration">
+                        <img src="../assets/img/courses-5.png" alt="Step 4 Illustration">
                     </div>
                 </div>
                 <!-- Step 6 -->
@@ -368,7 +335,7 @@
                         </p>
                     </div>
                     <div class="step-image">
-                        <img src="img/courses-6.png" alt="Step 4 Illustration">
+                        <img src="../assets/img/courses-6.png" alt="Step 4 Illustration">
                     </div>
                 </div>
             </div>
@@ -402,7 +369,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="pakage-right-img">
-                        <img src="img/pakage-right-shap.png" alt="">
+                        <img src="../assets/img/pakage-right-shap.png" alt="">
                     </div>
                 </div>
             </div>
@@ -426,7 +393,7 @@
                             confidence.
                         </p>
                     </div>
-                    <img src="img/faq-img.png" class="faq-img" alt="">
+                    <img src="../assets/img/faq-img.png" class="faq-img" alt="">
                 </div>
             </div>
 
@@ -443,7 +410,7 @@
                             </button>
                         </h2>
                         <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#faqAccordion" style="">
+                            data-bs-parent="#faqAccordion" >
                             <div class="accordion-body">
                                 NEET aspirants can use rank predictor tool after NEET exam. It shows the estimated rank
                                 to candidates based on previous year trends and current year various our expert answer
@@ -623,7 +590,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="img/solution-img.png" class="solution-right-img" alt="">
+                        <img src="../assets/img/solution-img.png" class="solution-right-img" alt="">
                     </div>
                 </div>
             </div>
@@ -710,12 +677,12 @@
             <div class="swiper counselling-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
-                        <img src="img/slider-img1.png" alt="">
+                        <img src="../assets/img/slider-img1.png" alt="">
                     </div>
-                    <div class="swiper-slide slide-2"> <img src="img/slider-img2.png" alt=""></div>
-                    <div class="swiper-slide slide-3"> <img src="img/slider-img3.png" alt=""></div>
-                    <div class="swiper-slide slide-4"> <img src="img/slider-img2.png" alt=""></div>
-                    <div class="swiper-slide slide-5"> <img src="img/slider-img1.png" alt=""></div>
+                    <div class="swiper-slide slide-2"> <img src="../assets/img/slider-img2.png" alt=""></div>
+                    <div class="swiper-slide slide-3"> <img src="../assets/img/slider-img3.png" alt=""></div>
+                    <div class="swiper-slide slide-4"> <img src="../assets/img/slider-img2.png" alt=""></div>
+                    <div class="swiper-slide slide-5"> <img src="../assets/img/slider-img1.png" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -907,7 +874,7 @@
                             confidence.
                         </p>
                     </div>
-                    <img src="img/faq-img.png" class="faq-img" alt="">
+                    <img src="../assets/img/faq-img.png" class="faq-img" alt="">
                 </div>
             </div>
 
@@ -924,7 +891,7 @@
                             </button>
                         </h2>
                         <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#faqAccordion" style="">
+                            data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
                                 Medical admission counselling is the process of allotting medical college seats to NEET
                                 qualified and eligible candidates based on their NEET All India Rank, Domicile and
@@ -1060,78 +1027,11 @@
         </div>
     </section>
 
-    <?php include('include/footer.php'); ?>
+    <?php
+    // --- Include the master footer ---
+    include __DIR__ . '/../includes/footer.php';
+?>
 
-    <a href="javascript:void(0)" id="top-button" class="back_top">
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none">
-                <mask id="mask0_511_55" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                    height="25">
-                    <rect x="0.5" y="0.25" width="24" height="24" fill="currentColor" />
-                </mask>
-                <g mask="url(#mask0_511_55)">
-                    <path
-                        d="M11.5 22.25V6.075L6.9 10.65L5.5 9.25L12.5 2.25L19.5 9.25L18.1 10.675L13.5 6.075V22.25H11.5Z"
-                        fill="currentColor" />
-                </g>
-            </svg>
-        </span>
-    </a>
-
-    <script>
-        const swiper = new Swiper('.counselling-slider', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1
-                },
-                640: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 2.5
-                },
-                1024: {
-                    slidesPerView: 3
-                }
-            },
-
-        });
-    </script>
-    <script>
-        function animateCounter(id, target, suffix = "", duration = 2000) {
-            const element = document.getElementById(id);
-            let start = 0;
-            const stepTime = Math.abs(Math.floor(duration / target));
-
-            const timer = setInterval(() => {
-                start += 1;
-                element.textContent = start + suffix;
-                if (start >= target) {
-                    clearInterval(timer);
-                }
-            }, stepTime);
-        }
-
-        // Run counters
-        animateCounter("users", 153, "k");
-        animateCounter("experience", 23, "+");
-        animateCounter("accuracy", 100, "%"); // Adjust for 99.9%
-        setTimeout(() => {
-            document.getElementById("accuracy").textContent = "100%";
-        }, 2500);
-    </script>
 </body>
 
 </html>

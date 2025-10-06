@@ -10,20 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
     itemsPerPageSelect.value = '10';
 
     // Load data from the table rows (parsed from PHP-generated HTML)
-    function loadData() {
-        institutesData = [];
-        const rows = document.querySelectorAll('.table-row');
-        rows.forEach((row, index) => {
-            institutesData.push({
-                id: index + 1,
-                state: row.querySelector('.state-col').textContent,
-                name: row.querySelector('.name-col').textContent,
-                university: row.querySelector('.university-col').textContent,
-                year: row.querySelector('.year-col').textContent,
-                seats: row.querySelector('.seats-col').textContent
-            });
+   function loadData() {
+    institutesData = [];
+    const rows = document.querySelectorAll('.table-row');
+    rows.forEach((row, index) => {
+        institutesData.push({
+            id: index + 1,
+            // Use optional chaining (?.) and provide a default value ('')
+            state: row.querySelector('.state-col')?.textContent ?? '',
+            name: row.querySelector('.name-col')?.textContent ?? '',
+            university: row.querySelector('.university-col')?.textContent ?? '',
+            year: row.querySelector('.year-col')?.textContent ?? '',
+            seats: row.querySelector('.seats-col')?.textContent ?? ''
         });
-    }
+    });
+}
 
     // Show loading animation (with specified margins, bottom space, and border-radius)
     function showLoading() {

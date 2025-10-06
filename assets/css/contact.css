@@ -1,0 +1,174 @@
+
+        p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .map-info-section {
+            padding: 40px 0;
+        }
+
+        .map-info-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+
+        .map-box {
+            flex: 1.5;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-box {
+            flex: 1;
+            padding: 40px;
+            background: linear-gradient(135deg, #f9f9f9, #fff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .info-box h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .info-box p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .view-map-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4a6cf7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .map-info-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .map-box {
+                height: 300px;
+                width: 100%;
+            }
+
+            .info-box {
+                padding: 25px;
+                text-align: center;
+                border-left: none;
+            }
+
+            .view-map-btn {
+                margin-top: 15px;
+            }
+        }
+
+        .locations {
+            background: #006DD3;
+            position: relative;
+        }
+
+        .locations::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../img/why-Choose-befour.png");
+            z-index: 0;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.04;
+        }
+
+        .locations .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            height: auto;
+            padding: 20px;
+            /* optional for spacing on small screens */
+        }
+
+        /* Mobile view (screen width up to 768px) */
+        @media (max-width: 768px) {
+            .locations .container {
+                max-width: 100%;
+                height: auto;
+                /* Let content decide height */
+                padding: 15px;
+            }
+        }
+
+
+        .location-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px;
+            width: 300px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #00cf7b;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #666;
+        }
+
+        .book-now-wrapper {
+            position: relative;
+            display: inline-block;
+        }

@@ -60,21 +60,7 @@ $(document).ready(function () {
       $('html, body').animate({scrollTop:0}, '300');
     });
 
-    // $('.back_top').click(function(){
-    //     $('html, body').animate({scrollTop:0}, 500);
-    // });
 
-    // $('.back_top').click(function () {
-    //     $('html, body').animate({ scrollTop: 0 }, 500);
-    // });
-
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 100) {
-    //         $('.back_top').fadeIn();
-    //     } else {
-    //         $('.back_top').fadeOut();
-    //     }
-    // });
 
     $(".navbar-toggler").click(function () {
         $(this).toggleClass("menu-opened");

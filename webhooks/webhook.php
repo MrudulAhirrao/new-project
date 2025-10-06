@@ -4,7 +4,7 @@ $secretToken = '1N9pSWds7koEr9fosYEyD795k4j2pv6T1ERaRTS0XYoM'; // Same as in App
 
 // Log function
 function logMessage($message) {
-    file_put_contents(__DIR__ . '/Instute data/webhook.log', date('Y-m-d H:i:s') . ' - ' . $message . PHP_EOL, FILE_APPEND);
+    file_put_contents(__DIR__ . '/Instute_data/webhook.log', date('Y-m-d H:i:s') . ' - ' . $message . PHP_EOL, FILE_APPEND);
 }
 
 // Read incoming webhook data
@@ -30,7 +30,7 @@ if (!isset($data['data']) || !is_array($data['data']) || !isset($data['sheetName
 
 // Sanitize sheet name to create a safe cache file name
 $sheetName = preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($data['sheetName']));
-$cacheFile = __DIR__ . '/Instute data/' . $sheetName . '.json'; // Save to Instute data folder
+$cacheFile = __DIR__ . '/Instute_data/' . $sheetName . '.json'; // Save to Instute data folder
 logMessage('Saving to cache file: ' . $cacheFile);
 logMessage('Data rows: ' . count($data['data']));
 

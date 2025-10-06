@@ -1,8 +1,8 @@
 <?php
 // institute_template.php
 // Expected variables: $sheetName, $pageTitle, $instituteLabel, $fallbackRow
-$cacheFile = __DIR__ . '/Instute data/' . preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($sheetName)) . '.json';
-file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . ' - Cache file: ' . $cacheFile . ' Exists: ' . (file_exists($cacheFile) ? 'Yes' : 'No') . PHP_EOL, FILE_APPEND);
+$cacheFile = __DIR__ . '/../Instute_data/' . preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($sheetName)) . '.json';
+file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s') . ' - Cache file: ' . $cacheFile . ' Exists: ' . (file_exists($cacheFile) ? 'Yes' : 'No') . PHP_EOL, FILE_APPEND);
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,66 +16,90 @@ file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . 
     <meta property="og:url" content="https://v4edusolution.com/" />
     <meta property="og:type" content="website" />
     <title>NEET Counsellor - <?php echo htmlspecialchars($pageTitle); ?></title>
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="../in/in.css">
+
+    <style>
+        .filter-bar {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+            color: #212529;
+        }
+        .sort-control, .show-control {
+            font-size: 1rem;
+        }
+        .filter-box {
+            background-color: #e7f1ff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        .sort-arrows {
+            line-height: 0.7;
+            font-size: 0.8rem;
+            color: #0d6efd;
+        }
+        .dropdown-toggle.btn-filter {
+            background-color: #e7f1ff;
+            border: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        .dropdown-toggle.btn-filter:hover, .dropdown-toggle.btn-filter:focus {
+            background-color: #cfe2ff;
+            box-shadow: none;
+        }
+        .dropdown-toggle.btn-filter::after {
+            color: #0d6efd;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- loader -->
     <div class="loader-wrapper" style="display: none;">
         <div class="loader">
-            <img src="img/logo.png" alt="">
+            <img src="../assets/img/logo.png" alt="">
         </div>
     </div>
     
-    <?php include(__DIR__ . '/include/header.php'); ?>
+    <?php include(__DIR__ . '/../includes/header.php'); ?>
     
-    <!-- Main Container -->
     <div class="institutes">
-        <!-- Filter Section -->
-        <section class="filter-section">
-            <div class="filter-container">
-                <h1 class="page-title"><?php echo htmlspecialchars($pageTitle); ?></h1>
-                <div class="filter-controls">
-                    <div class="filter-group">
-                        <label for="institutes-count" style="font-size: x-large;"><?php echo htmlspecialchars($instituteLabel); ?></label>
-                        <?php
-                        $instituteCount = file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0;
-                        file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . ' - JSON decode result: ' . (file_exists($cacheFile) ? (json_last_error() === JSON_ERROR_NONE ? 'Valid' : 'Invalid') : 'File not found') . PHP_EOL, FILE_APPEND);
-                        ?>
-                        <input type="number" id="institutes-count" value="<?php echo $instituteCount; ?>" class="number-input">
-                    </div>
-                    <div class="filter-group">
-                        <label for="items-per-page" style="font-size: x-large;">Showing</label>
-                        <select id="items-per-page" class="dropdown-select">
-                            <option value="10" selected>10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                            <option value="200">200</option>
-                            <option value="all">All</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
+        <section class="container my-4">
+    <h1 class="h2 fw-bold mb-3"><?php echo htmlspecialchars($pageTitle); ?></h1>
+    <div class="filter-bar d-flex justify-content-between align-items-center p-3 border rounded-3">
+        <a href="#" class="sort-control text-decoration-none d-flex align-items-center text-dark">
+            <span><?php echo htmlspecialchars($instituteLabel); ?></span>
+            <?php
+                $instituteCount = file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0;
+            ?>
+            <input type="number" id="institutes-count" class="filter-box ms-2" value="<?php echo $instituteCount; ?>" min="0" style="width: 80px; border: none; text-align: center;">
+           
+        </a>
 
-        <!-- Data Table Container -->
+        <div class="show-control d-flex align-items-center">
+            <span>Showing</span>
+            <select id="items-per-page" class="btn-filter ms-2" style="border: none; border-radius: 0.5rem; padding: 0.5rem 1rem; background-color: #e7f1ff; font-weight: 500;">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+    </div>
+</section>
+
+
+
         <div class="table-container">
-            <!-- Table Header -->
             <div class="table-header">
                 <div class="header-cell state-col">State / UT</div>
                 <div class="header-cell name-col">College Name and Address</div>
@@ -84,12 +108,11 @@ file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . 
                 <div class="header-cell seats-col">MBBS Seats</div>
             </div>
 
-            <!-- Table Rows (Dynamic from Cache) -->
             <?php
             if (file_exists($cacheFile)) {
                 $data = json_decode(file_get_contents($cacheFile), true);
                 if ($data === null) {
-                    file_put_contents(__DIR__ . '/template.log', date('Y-m-d H:i:s') . ' - JSON decode failed for ' . $cacheFile . ': ' . json_last_error_msg() . PHP_EOL, FILE_APPEND);
+                    file_put_contents(__DIR__ . '/../instute_data/template.log', date('Y-m-d H:i:s') . ' - JSON decode failed for ' . $cacheFile . ': ' . json_last_error_msg() . PHP_EOL, FILE_APPEND);
                 } else {
                     foreach ($data as $index => $row) {
                         echo '<div class="table-row" data-row="' . ($index + 1) . '">';
@@ -102,7 +125,7 @@ file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . 
                     }
                 }
             } else {
-                file_put_contents(__DIR__ . '/template.log', date('Y-m-d H:i:s') . ' - Cache file not found: ' . $cacheFile . PHP_EOL, FILE_APPEND);
+                file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s') . ' - Cache file not found: ' . $cacheFile . PHP_EOL, FILE_APPEND);
                 // Fallback static row
                 echo '<div class="table-row" data-row="1">';
                 foreach ($fallbackRow as $cell) {
@@ -113,12 +136,29 @@ file_put_contents(__DIR__ . '/Instute data/template.log', date('Y-m-d H:i:s') . 
             ?>
         </div>
 
-        <!-- Footer Section -->
-        <?php include(__DIR__ . "/include/footer.php"); ?>
+        <?php include(__DIR__ . "/../includes/footer.php"); ?>
     </div>
 
-    <!-- JavaScript for Mobile Menu -->
-    <script src="../in/script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="../in/script.js"></script>
+    <script>
+        // You may need to add this to your script.js file to make the dropdown functional
+        document.addEventListener('DOMContentLoaded', function () {
+            const itemsPerPageBtn = document.getElementById('items-per-page-btn');
+            const itemsPerPageMenu = document.getElementById('items-per-page-menu');
+            
+            if(itemsPerPageMenu && itemsPerPageBtn) {
+                itemsPerPageMenu.addEventListener('click', function (e) {
+                    if (e.target.classList.contains('dropdown-item')) {
+                        const selectedValue = e.target.getAttribute('data-value');
+                        itemsPerPageBtn.textContent = selectedValue;
+                        // From here, you can trigger your table filtering/pagination logic
+                        console.log('Selected items per page:', selectedValue);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
 </html>

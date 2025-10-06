@@ -14,7 +14,7 @@
   <div class="institutes">
 
     <!-- Header Section -->
-    <?php include(__DIR__ . "/../include/header.php"); ?>
+    <?php include(__DIR__ . "/../includes/header.php"); ?>
 
 
     <!-- Filter Section -->
@@ -145,7 +145,7 @@
     </div>
 
     <!-- Footer Section -->
-    <?php include(__DIR__ . "/../include/footer.php"); ?>
+    <?php include(__DIR__ . "/../includes/footer.php"); ?>
   </div>
 
   <!-- JavaScript for Mobile Menu -->
