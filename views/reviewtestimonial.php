@@ -207,6 +207,31 @@
                 right: -28px;
             }
         }
+.half-box {
+    position: absolute;
+    top: 0;
+    width: 120px;       /* Adjust width as needed for design */
+    height: 100%;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 5;         /* Below testimonial card & buttons */
+    pointer-events: none; /* Prevent from interfering with buttons */
+}
+.half-box.left {
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.half-box.right {
+    right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+@media (max-width: 768px) {
+    .half-box {
+        display: none;  /* Make smaller on mobile */
+    }
+}
 
 
         @media (max-width: 768px) {
@@ -264,6 +289,7 @@
         </div>
 
         <div class="carousel-section">
+            <div class="half-box left"></div>
             <div class="testimonial-card-wrapper">
                 <div class="testimonial-card">
                     <div class="stars-badge">
@@ -291,6 +317,7 @@
                     </svg>
                 </button>
             </div>
+            <div class="half-box right"></div>
         </div>
 
         <div class="dots">
