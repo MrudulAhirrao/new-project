@@ -36,29 +36,55 @@ $metaDescription = $metaDescription ?? 'With over 23 years of expertise, our tea
 </head>
 <body>
 
-<header id="header" class="fixed-top bg-white shadow-sm">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <a class="navbar-brand d-flex align-items-center" href="index.php" style="font-size:0;">
-                <img src="../assets/Images/logo.png" alt="V4Edu Solution Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php#Service">Service</a></li>
-                    <li class="nav-item"><a class="nav-link" href="instute.php">Institute</a></li>
-                    <li class="nav-item"><a class="nav-link" href="neet-counsellor-jaipur.php">Counsellor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="packages.php">Packages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.php">Support</a></li>
-                </ul>
-                <div class="d-flex mt-3 mt-lg-0">
-                    <a class="btn btn-outline-primary" href="tel:+919462363646">Call Now</a>
-                </div>
-            </div>
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand" href="https://v4edusolution.com">
+            <img src="../assets/img/logo.png" alt="v4edusolution Logo">
+        </a>
+
+        <nav class="nav-menu-wrapper d-none d-lg-flex">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="../views/index.php">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="../views/index.php#Service">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/instute.php">Institute</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/neet-counsellor-jaipur.php">Counsellor</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/packages.php">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/contact.php">Support</a></li>
+            </ul>
         </nav>
+
+        <a href="tel:+919462363646" class="btn-call-now d-none d-lg-block">Call Now</a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-controls="mobileMenuOffcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
     </div>
 </header>
-<main>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuOffcanvasLabel">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="https://v4edusolution.com">
+            <img src="../assets/img/logo.png" alt="v4edusolution Logo">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    
+    <div class="offcanvas-body">
+    
+        <div class="mobile-nav-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="../views/index.php">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="../views/index.php#Service">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/instute.php">Institute</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/neet-counsellor-jaipur.php">Counsellor</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/packages.php">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/contact.php">Support</a></li>
+        </div>
+
+        <div class="mobile-nav-cta">
+            <a href="tel:+919462363646" class="btn-call-now">Call Now</a>
+        </div>
+        
+    </div>
+</div>

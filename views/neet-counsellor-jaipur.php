@@ -164,7 +164,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-12 text-center">
-                <h2 class="fw-bold" style="color: #0c2b5b;">Our Predictors</h2>
+                <h2 class="fw-bold" style="color: #0c2b5b; font-size: 35px;" >Our Predictors</h2>
             </div>
         </div>
 

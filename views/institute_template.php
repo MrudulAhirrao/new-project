@@ -3,6 +3,7 @@
 // Expected variables: $sheetName, $pageTitle, $instituteLabel, $fallbackRow
 $cacheFile = __DIR__ . '/../Instute_data/' . preg_replace('/[^a-zA-Z0-9]/', '_', strtolower($sheetName)) . '.json';
 file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s') . ' - Cache file: ' . $cacheFile . ' Exists: ' . (file_exists($cacheFile) ? 'Yes' : 'No') . PHP_EOL, FILE_APPEND);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,11 +35,12 @@ file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s')
             font-size: 1rem;
         }
         .filter-box {
-            background-color: #e7f1ff;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-        }
+        background-color: #e7f1ff;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
         .sort-arrows {
             line-height: 0.7;
             font-size: 0.8rem;
@@ -57,6 +59,37 @@ file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s')
         .dropdown-toggle.btn-filter::after {
             color: #0d6efd;
         }
+ #institutes-count {
+        width: 75px; /* A bit of space for arrows */
+        text-align: center;
+        padding: 0.5rem;
+    }
+    #institutes-count::-webkit-inner-spin-button,
+    #institutes-count::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    #institutes-count {
+        -moz-appearance: textfield; /* For Firefox */
+    }
+
+    /* Styles for the custom arrow buttons */
+    .arrow-control {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem; /* Space between input and arrows */
+    }
+    .arrow-btn {
+        padding: 0;
+        line-height: 0.7; /* Brings arrows closer together */
+        font-size: 1.25rem; /* Makes icons bigger */
+        color: #0a2342; /* Dark blue color from image */
+        cursor: pointer;
+    }
+    .arrow-btn:hover {
+        color: #0056b3; /* A slightly lighter blue for hover effect */
+    }
+        
     </style>
 </head>
 
@@ -71,28 +104,39 @@ file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s')
     
     <div class="institutes">
         
-        <section class="container my-4">
-    <h1 class="h2 fw-bold mb-3"><?php echo htmlspecialchars($pageTitle); ?></h1>
-    <div class="filter-bar d-flex justify-content-between align-items-center p-3 border rounded-3">
-        <a href="#" class="sort-control text-decoration-none d-flex align-items-center text-dark">
-            <span><?php echo htmlspecialchars($instituteLabel); ?></span>
-            <?php
-                $instituteCount = file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0;
-            ?>
-            <input type="number" id="institutes-count" class="filter-box ms-2" value="<?php echo $instituteCount; ?>" min="0" style="width: 80px; border: none; text-align: center;">
-           
-        </a>
+       <section class="container my-4">
+    <div class="d-flex justify-content-between align-items-center">
 
-        <div class="show-control d-flex align-items-center">
-            <span>Showing</span>
-            <select id="items-per-page" class="btn-filter ms-2" style="border: none; border-radius: 0.5rem; padding: 0.5rem 1rem; background-color: #e7f1ff; font-weight: 500;">
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-                <option value="200">200</option>
-                <option value="all">All</option>
-            </select>
+        <h1 class="h2 fw-bold mb-0">All India Quota Government Medical Institution 2024</h1>
+
+        <div class="d-flex align-items-center">
+
+            <div class="d-flex align-items-center me-4">
+                <span>State Govt. Inst.</span>
+                <?php
+                    $instituteCount = file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0;
+                ?>
+                
+                <input type="number" id="institutes-count" class="filter-box ms-2" value="<?php echo $instituteCount; ?>">
+                
+                <div class="arrow-control">
+                    <i id="increase-btn" class="bi bi-caret-up-fill arrow-btn"></i>
+                    <i id="decrease-btn" class="bi bi-caret-down-fill arrow-btn"></i>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <span>Showing</span>
+                <select id="items-per-page" class="filter-box ms-2" style="padding: 0.5rem 1rem;">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+
         </div>
     </div>
 </section>
@@ -159,6 +203,22 @@ file_put_contents(__DIR__ . '/../Instute_data/template.log', date('Y-m-d H:i:s')
                 });
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const numberInput = document.getElementById('institutes-count');
+    const increaseBtn = document.getElementById('increase-btn');
+    const decreaseBtn = document.getElementById('decrease-btn');
+
+    // Increase the number when the up arrow is clicked
+    increaseBtn.addEventListener('click', function() {
+        numberInput.stepUp();
+    });
+
+    // Decrease the number when the down arrow is clicked
+    decreaseBtn.addEventListener('click', function() {
+        numberInput.stepDown();
+    });
+});
     </script>
 </body>
 </html>
