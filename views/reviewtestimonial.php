@@ -8,7 +8,6 @@
     <style>
         .testimonials-container {
             width: 100%;
-            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
             background: radial-gradient(ellipse at top, #e0f2fe, #f4f7fa 80%);

@@ -184,6 +184,11 @@ include __DIR__ . '/../includes/header.php';
                                             ?>
                                                 <li class="d-flex align-items-center feature-list-item">
 
+                                                    <svg class="me-3" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="21" height="21" rx="10.5" fill="#00CF7B" />
+                                                        <path d="M15.6 7L9 13.6L6 10.6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+
                                                     <span><?php echo htmlspecialchars(trim($feature)); ?></span>
                                                 </li>
                                             <?php } ?>
@@ -242,6 +247,11 @@ include __DIR__ . '/../includes/header.php';
                                             ?>
                                                 <li class="d-flex align-items-center feature-list-item">
 
+                                                    <svg class="me-3" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="21" height="21" rx="10.5" fill="#00CF7B" />
+                                                        <path d="M15.6 7L9 13.6L6 10.6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+
                                                     <span><?php echo htmlspecialchars(trim($feature)); ?></span>
                                                 </li>
                                             <?php } ?>
@@ -265,12 +275,11 @@ include __DIR__ . '/../includes/header.php';
 
     <section class="py-5" style="background-color: #C6F9E7;">
         <div class="container">
-            <h2
-                class="text-center text-2xl md:text-3xl font-bold text-black mb-5 flex items-center justify-center gap-2">
-                <span class="animate-pulse text-gray-500">✴</span>What We Offer With Your Subscription<span
-                    class="animate-pulse text-gray-500">✴</span>
+            <h2 class="text-center text-2xl md:text-3xl font-normal text-black mb-5 flex items-center justify-center gap-2">
+                <span class="text-secondary">✴</span>What We Offer With Your Subscription<span
+                    class="text-secondary">✴</span>
             </h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto" style="max-width: 60rem;">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100" style="border-radius: 1.5rem;">
                         <div class="card-body p-5">
@@ -286,7 +295,7 @@ include __DIR__ . '/../includes/header.php';
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100" style="border-radius: 1.5rem;">
                         <div class="card-body p-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-16 h-16 text-orange-500"  color="#f97316">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-16 h-16 text-orange-500" color="#f97316">
                                 <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
                                 </path>
                                 <path d="M22 10v6"></path>

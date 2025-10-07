@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: "Afacad", sans-serif;
     color: #000;
+    padding-top: 80px;
 }
 
 
@@ -403,9 +404,7 @@ body.scroll-off {
     background-color: #0056b3;
     color: #fff;
 }
-body {
-    padding-top: 90px; /* Adjust main content padding to account for fixed header */
-}
+
 
 /* =================================
    MOBILE NAV BUTTON VISIBILITY FIX
@@ -622,7 +621,7 @@ body {
 }
 
 footer h6 {
-    font-size: 32px;
+    font-size: 22px;
     color: #00CF7B;
     margin: 0 0 20px;
     position: relative;
@@ -671,14 +670,29 @@ ul.footer-links.socialize li a i {
     border-top: 1px solid #eeeeee;
     background: linear-gradient(90deg, rgba(2, 56, 106, 1) 0%, rgba(0, 0, 0, 1) 100%)
 }
+.footer-logo {
+    max-width: 180px; /* You can adjust this value */
+}
 
 .social-box {
+    gap: 10px;
+}
+.social-box-list a {
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-box-list a:hover {
+    background-color: #fff;
+    color: #02386A; /* Main dark blue color */
 }
 
 .social-box-list a svg {
@@ -756,6 +770,61 @@ ul.footer-links.socialize li a i {
 .back_top:hover span {
     color: #2196f3;
 }
+.subscription-form-wrapper {
+    display: flex;          /* Aligns items side-by-side */
+    align-items: center;    /* Vertically centers them */
+    gap: 15px;              /* Creates the space BETWEEN the input and button */
+    
+    max-width: 520px;       /* Adjusted max-width */
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+/* The styling for the standalone, rounded input field */
+.subscription-form-wrapper .form-control {
+    flex-grow: 1;           /* Allows the input to fill available space */
+    height: 52px;           /* A consistent height */
+    
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Its OWN border */
+    border-radius: 50px;    /* Fully rounded corners */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;     /* Normal padding */
+}
+
+/* A slightly brighter border when the user clicks into the input */
+.subscription-form-wrapper .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #fff;
+}
+
+/* Styling for the placeholder text */
+.subscription-form-wrapper .form-control::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+/* The styling for the standalone, rounded button */
+.subscription-form-wrapper .btn-subscribe {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 50px;    /* Fully rounded corners */
+    padding: 15px 35px;     /* Padding controls the button's size */
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;    /* Keeps "Subscribe" on one line */
+    transition: background-color 0.2s ease;
+    
+    /* NOTE: All absolute positioning has been removed */
+}
+
+.subscription-form-wrapper .btn-subscribe:hover {
+    background-color: #f0f0f0; /* A simple hover effect */
+}
+
 
 
 /*==================== Footer ===================*/

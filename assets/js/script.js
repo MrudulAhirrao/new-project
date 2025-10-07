@@ -4,45 +4,7 @@ $(document).ready(function () {
     var HeadH = $('#header').outerHeight();
     // $('body').css('padding-top', HeadH);
 
-    var scrollWindow = function() {
-        $(window).on('load scroll',function() {
-            var navbar = $('#header');
-            
-            // if ($(this).scrollTop() > HeadH) {
-            if ($(this).scrollTop() > 250) {
-                if (!navbar.hasClass('is-sticky')) {
-                    navbar.addClass('is-sticky');
-                     $('body').css('padding-top', HeadH);
-                }
-            }
-            // if ($(this).scrollTop() < HeadH) {
-            if ($(this).scrollTop() < 250) {
-                if (navbar.hasClass('is-sticky')) {
-                    navbar.removeClass('is-sticky');
-                    $('body').css('padding-top', 0);
-                }
-            }
-            // if ($(this).scrollTop() > HeadH*2) {
-            if ($(this).scrollTop() > 250) {
-                if (!navbar.hasClass('awake')) {
-                    navbar.addClass('awake');
-                }
-            }
-            // if ($(this).scrollTop() < HeadH*2) {
-            if ($(this).scrollTop() < 50) {
-                if (navbar.hasClass('awake')) {
-                    navbar.removeClass('awake');
-                }
-            }
-            // if ($(this).scrollTop() >= 400) { 
-            //     $('.back_top').addClass('active');
-            // }
-            // else {
-            //     $('.back_top').removeClass('active');
-            // }
-        });
-    };
-    scrollWindow();
+    
 
 
     var btn = $('#top-button');
