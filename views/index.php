@@ -280,7 +280,7 @@ include __DIR__ . '/../includes/header.php';
         <div class="row">
             <div class="col-md-8">
                 <div class="section-header">
-                    <span class="section-heading">V4Edu Solution</span>
+                    <span class="section-heading">V4Edu Solution</span>
                     <p class="section-info">
                         V4Edu Solution is an exclusive platform founded by V4Edu where we provide innovative NEET
                         counselling services to students aspiring to get into medicine.
@@ -658,6 +658,30 @@ include __DIR__ . '/../includes/header.php';
         </div>
     </div>
 </section>
+
+ <script>
+        function animateCounter(id, target, suffix = "", duration = 2000) {
+            const element = document.getElementById(id);
+            let start = 0;
+            const stepTime = Math.abs(Math.floor(duration / target));
+
+            const timer = setInterval(() => {
+                start += 1;
+                element.textContent = start + suffix;
+                if (start >= target) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        // Run counters
+        animateCounter("users", 153, "k");
+        animateCounter("experience", 23, "+");
+        animateCounter("accuracy", 100, "%"); // Adjust for 99.9%
+        setTimeout(() => {
+            document.getElementById("accuracy").textContent = "100%";
+        }, 2500);
+    </script>
 
 <?php
 // --- Include the master footer ---

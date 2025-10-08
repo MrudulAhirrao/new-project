@@ -107,6 +107,36 @@
         .testimonial-card.fading {
             opacity: 0;
         }
+        /* --- Sliding Animation --- */
+.testimonial-card.slide-left {
+  animation: slideLeft 0.5s ease forwards;
+}
+.testimonial-card.slide-right {
+  animation: slideRight 0.5s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
         .stars-badge {
             position: absolute;
@@ -330,80 +360,86 @@
     </div>
 
 
-    <script>
-        const testimonials = [{
-                text: 'I joined as an <span class="highlight">online tutor</span> for Science, and I am really impressed with the platform. The process is simple, and I get to teach motivated students. The website ensures only verified tutors, which builds trust for both tutors and students.',
-                author: 'Neha Gupta (Science Tutor)'
-            },
-            {
-                text: 'I was looking for the <span class="highlight">best home tuition near me</span> for Maths. Through this website, I found a very experienced home tutor who explained concepts clearly and patiently. My grades improved within a few months. Highly recommended!',
-                author: 'Riya (Class 10, Jaipur)'
-            },
-            {
-                text: 'As a tutor, this website gave me an opportunity to connect with students easily. I registered as a <span class="highlight">home tutor</span> and within a week, I had multiple requests. It’s a great platform for teachers to share knowledge and earn at the same time.',
-                author: 'Ankit Sharma (Maths Tutor)'
-            },
-            {
-                text: 'The quality of tutors is excellent. My daughter\'s confidence in <span class="highlight">Physics</span> has grown immensely. The platform is user-friendly and very reliable for finding the right educational support.',
-                author: 'Mr. Prakash (Parent)'
-            },
-            {
-                text: 'Finding verified students was always a challenge. This platform has a great verification process which helped me find a stable income as an <span class="highlight">English Tutor</span>. Highly recommended for fellow tutors.',
-                author: 'Sunita Rao (English Tutor)'
-            }
-        ];
+   <script>
+  const testimonials = [
+    {
+      text: 'I joined as an <span class="highlight">online tutor</span> for Science, and I am really impressed with the platform. The process is simple, and I get to teach motivated students. The website ensures only verified tutors, which builds trust for both tutors and students.',
+      author: 'Neha Gupta (Science Tutor)'
+    },
+    {
+      text: 'I was looking for the <span class="highlight">best home tuition near me</span> for Maths. Through this website, I found a very experienced home tutor who explained concepts clearly and patiently. My grades improved within a few months. Highly recommended!',
+      author: 'Riya (Class 10, Jaipur)'
+    },
+    {
+      text: 'As a tutor, this website gave me an opportunity to connect with students easily. I registered as a <span class="highlight">home tutor</span> and within a week, I had multiple requests. It’s a great platform for teachers to share knowledge and earn at the same time.',
+      author: 'Ankit Sharma (Maths Tutor)'
+    },
+    {
+      text: 'The quality of tutors is excellent. My daughter\'s confidence in <span class="highlight">Physics</span> has grown immensely. The platform is user-friendly and very reliable for finding the right educational support.',
+      author: 'Mr. Prakash (Parent)'
+    },
+    {
+      text: 'Finding verified students was always a challenge. This platform has a great verification process which helped me find a stable income as an <span class="highlight">English Tutor</span>. Highly recommended for fellow tutors.',
+      author: 'Sunita Rao (English Tutor)'
+    }
+  ];
 
-        let currentSlide = 0;
-        const totalSlides = testimonials.length;
+  let currentSlide = 0;
+  const totalSlides = testimonials.length;
+  const testimonialTextEl = document.getElementById('testimonial-text');
+  const authorNameEl = document.getElementById('author-name');
+  const cardEl = document.querySelector('.testimonial-card');
 
-        const testimonialTextEl = document.getElementById('testimonial-text');
-        const authorNameEl = document.getElementById('author-name');
-        const cardEl = document.querySelector('.testimonial-card');
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
 
-        function updateDots() {
-            const dots = document.querySelectorAll('.dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
-        }
+  function updateSlide(direction = 'left') {
+    // Remove existing animations
+    cardEl.classList.remove('slide-right', 'slide-left');
 
-        function updateSlide() {
-            cardEl.classList.add('fading');
+    // Trigger reflow to restart animation
+    void cardEl.offsetWidth;
 
-            setTimeout(() => {
-                const current = testimonials[currentSlide];
-                testimonialTextEl.innerHTML = current.text;
-                authorNameEl.textContent = current.author;
-                cardEl.classList.remove('fading');
-            }, 300);
-        }
+    // Apply direction-based animation
+    cardEl.classList.add(direction === 'right' ? 'slide-left' : 'slide-right');
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateDots();
-            updateSlide();
-        }
+    // Change testimonial content slightly after animation starts
+    setTimeout(() => {
+      const current = testimonials[currentSlide];
+      testimonialTextEl.innerHTML = current.text;
+      authorNameEl.textContent = current.author;
+    }, 100);
 
-        function previousSlide() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateDots();
-            updateSlide();
-        }
+    updateDots();
+  }
 
-        document.querySelectorAll('.dot').forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                updateDots();
-                updateSlide();
-            });
-        });
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide('left');
+  }
 
-        // Initial setup
-        document.addEventListener('DOMContentLoaded', () => {
-            updateDots();
-            updateSlide();
-        });
-    </script>
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlide('right');
+  }
+
+  document.querySelectorAll('.dot').forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      const direction = index > currentSlide ? 'left' : 'right';
+      currentSlide = index;
+      updateSlide(direction);
+    });
+  });
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateSlide();
+  });
+</script>
+
 </body>
 
 </html>
