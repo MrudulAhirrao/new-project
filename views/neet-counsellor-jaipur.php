@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best NEET Counsellor in Jaipur | NEET UG & PG Admissions</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,142 +18,61 @@
 </head>
 
 <body>
-<?php
+    <?php
     include __DIR__ . '/../includes/header.php';
-?>
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <p class="mb-3">
-                    <span class="badge rounded-pill fs-6 fw-medium" style="background-color: #e7f3ff; color: #0d6efd; padding: 0.6em 1.2em;">
-                        Your Trusted Partner for NEET UG & PG Success
-                    </span>
-                </p>
-
-                <h1 class="display-5 fw-bold" style="color: #0c2b5b;">
-                    Best NEET Counsellor in Jaipur | NEET UG & PG Admissions
-                </h1>
-            </div>
-
-            <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="text-center">
-                                        <img src="../assets/Images/background.png" class="img-fluid rounded-4" alt="NEET Counsellors Illustration">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="py-5 bg-light">
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-
-                <div class="position-relative p-4 p-md-5 text-center rounded-5" style="background-color: #F0FAF7; border: 1px solid #16D194;">
-                    
-                    <p class="lead" style="color: #345D50;">
-                        Are you a NEET aspirant 2025 and searching for Best NEET Counsellor in Jaipur (Rajasthan) to help you secure 100% admission in a top medical college in India?
-                    </p>
-                    <p style="color: #345D50;">
-                        Welcome to V4Edusolution NEET counselling guidance, the NO#1 ranked and best neet result-oriented NEET UG & PG counselling service in Jaipur. With 23 years of experience and 23,597 successful medical admissions, we specialize in guiding NEET students through the complexities of NEET UG and NEET PG admissions all India and State counselling with personalized attention. With 23 years of experience, our NEET counsellors Jaipur are well-equipped to address all your medical admissions queries related to General Quota, ESI Quota, NRI Quota, Management Quota and Minority Quota across all India and State counselling processes.
-                    </p>
-                    <p class="mb-5" style="color: #345D50;">
-                        If you are looking for MBBS, MD, MS, DNB, BDS, BAMS or BVSc admissions in 2025, than our expert MBBS NEET Counsellor at Jaipur will help you to secure 100% the best medical colleges opportunities.
-                    </p>
-
-                    <!-- Button embedded in border -->
-                    <div class="d-flex justify-content-center position-relative mt-4" >
-                        <a href="#"
-                           class="predict-btn btn btn-lg text-white rounded-3 px-5 py-2 fw-medium shadow-sm "
-                           style="background-color: #16D194; border: 1px solid #16D194;">
-                            Predict College Now
-                        </a>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="why-section">
+    ?>
+    <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="section-heading text-center mb-5">Why Choose <span class="color-tag">Us?</span></div>
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="../assets/img/join-us.png" alt="Why Choose Us" class="img-fluid rounded">
-                </div>
+            <div class="row align-items-center">
+
                 <div class="col-lg-6">
-                    <div class="accordion" id="whyAccordion">
-                        <div class="accordion-item" style="background-color: #EEF7FF;">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                    Best NEET Counsellor in Jaipur
-                                </button>
-                            </h2>
-                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#whyAccordion">
-                                <div class="accordion-body">
-                                    Our experienced NEET counsellors are specialists with a deep understanding of the NEET admission process, both at the All India and state levels.
-                                </div>
-                            </div>
+                    <p class="mb-3">
+                        <span class="badge rounded-pill fs-6 fw-medium" style="background-color: #e7f3ff; color: #0d6efd; padding: 0.6em 1.2em;">
+                            Your Trusted Partner for NEET UG & PG Success
+                        </span>
+                    </p>
+
+                    <h1 class="display-5 fw-bold" style="color: #0c2b5b;">
+                        Best NEET Counsellor in Jaipur | NEET UG & PG Admissions
+                    </h1>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="text-center">
+                        <img src="../assets/Images/background.png" class="img-fluid rounded-4" alt="NEET Counsellors Illustration">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="position-relative p-4 p-md-5 text-center rounded-5" style="background-color: #F0FAF7; border: 1px solid #16D194;">
+
+                        <p class="lead" style="color: #345D50;">
+                            Are you a NEET aspirant 2025 and searching for Best NEET Counsellor in Jaipur (Rajasthan) to help you secure 100% admission in a top medical college in India?
+                        </p>
+                        <p style="color: #345D50;">
+                            Welcome to V4Edusolution NEET counselling guidance, the NO#1 ranked and best neet result-oriented NEET UG & PG counselling service in Jaipur. With 23 years of experience and 23,597 successful medical admissions, we specialize in guiding NEET students through the complexities of NEET UG and NEET PG admissions all India and State counselling with personalized attention. With 23 years of experience, our NEET counsellors Jaipur are well-equipped to address all your medical admissions queries related to General Quota, ESI Quota, NRI Quota, Management Quota and Minority Quota across all India and State counselling processes.
+                        </p>
+                        <p class="mb-5" style="color: #345D50;">
+                            If you are looking for MBBS, MD, MS, DNB, BDS, BAMS or BVSc admissions in 2025, than our expert MBBS NEET Counsellor at Jaipur will help you to secure 100% the best medical colleges opportunities.
+                        </p>
+
+                        <!-- Button embedded in border -->
+                        <div class="d-flex justify-content-center position-relative mt-4">
+                            <a href="#"
+                                class="predict-btn btn btn-lg text-white rounded-3 px-5 py-2 fw-medium shadow-sm "
+                                style="background-color: #16D194; border: 1px solid #16D194;">
+                                Predict College Now
+                            </a>
                         </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                    Personalized Counselling in Jaipur
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
-                                <div class="accordion-body">
-                                    Every NEET Aspirant is unique in terms of all India Rank, Category, preferences and future goals. We provide 1-to-1 counselling sessions tailored to your rank, category, preferences, and future goals.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                    Complete Guidance
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
-                                <div class="accordion-body">
-                                    From registration and form filling to choice filling, college selection, College Allotment and document verification. With our experienced NEET counsellor based in Jaipur, we are here to guide you through every essential step.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                                    Updated Information
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
-                                <div class="accordion-body">
-                                    We stay updated with the latest counselling schedules, seat matrix changes, cut-off trends, and admission notifications, ensuring you never miss an opportunity.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                                    Transparent & Ethical Process
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
-                                <div class="accordion-body">
-                                    At V4edusolution Jaipur, we believe in transparency. No hidden charges, no false promises — just honest and professional guidance.
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -160,132 +80,227 @@
     </section>
 
 
-<section class="py-5" style="background: linear-gradient(to bottom, #e7f3ff, white 50%, #f8f9fa, white 75%, #e7f3ff);">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-12 text-center">
-                <h2 class="fw-bold" style="color: #0c2b5b; font-size: 35px;" >Our Predictors</h2>
+
+    <section class="why-section">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center mb-5">Why Choose <span class="color-tag">Us?</span></div>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="../assets/img/join-us.png" alt="Why Choose Us" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion why-accordion rectangle-8" id="faqAccordion">
+
+                        <!-- Item 1 -->
+                        <div class="accordion-item" style="background-color: #EEF7FF;">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    Best NEET Counsellor in Jaipur
+                                </button>
+                            </h2>
+                            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    Our experienced NEET counsellors are specialists with a deep understanding of the
+                                    NEET admission process, both at the All India and state levels.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    Personalized Counselling in Jaipur
+                                </button>
+                            </h2>
+                            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Every NEET Aspirant is unique in terms of all India Rank , Category, preferences and
+                                    future goals. We provide 1-to-1 counselling sessions tailored to your rank,
+                                    category, preferences, and future goals.Every NEET Aspirant is unique in terms of
+                                    all India Rank , Category, preferences and future goals. We provide 1-to-1
+                                    counselling sessions tailored to your rank, category, preferences, and future goals.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    Complete Guidance
+                                </button>
+                            </h2>
+                            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    From registration and form filling to choice filling, college selection, College
+                                    Allotment and document verification .With our experienced NEET counsellor based in
+                                    Jaipur, we are here to guide you through every essential step of your medical
+                                    admission journey.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    Updated Information
+                                </button>
+                            </h2>
+                            <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We stay updated with the latest counselling schedules, seat matrix changes, cut-off
+                                    trends, and admission notifications, ensuring you never miss an opportunity for your
+                                    medical admission. After all, we believe that nothing is more expensive than a
+                                    missed opportunity.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                    Transparent & Ethical Process
+                                </button>
+                            </h2>
+                            <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    At V4edusolution Jaipur, we believe in transparency. No hidden charges, no false
+                                    promises — just honest and professional guidance
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" style="background: linear-gradient(to bottom, #e7f3ff, white 50%, #f8f9fa, white 75%, #e7f3ff);">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold" style="color: #002445; font-size: 35px;">Our Predictors</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h3 class="fw-bold mb-3" style="color: #16D194;">Free Rank Predictor</h3>
+                    <p class="text-secondary">
+                        Our NEET Rank Predictor is based on previous years’ score trends to help you estimate your chances of MBBS admission. Use our NEET College Predictor to explore your expected rank in NEET 2025. Your predicted rank is based on past years trends, but this year's toughness level of physics paper is higher than past 9 years so your actual NEET rank may vary, it will also depends on how many questions (if any) NTA drops.
+                    </p>
+                    <a href="#" class="btn btn-lg text-white mt-3 rounded-2 fw-medium" style="background-color: #16D194; border-color: #16D194; padding: 0.6rem 2rem;">
+                        Rank Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center mt-4 mb-md-0 order-md-1">
+                    <img src="../assets/img/Illustration.png" class="img-fluid" alt="Illustration of a person on a podium holding a flag">
+                </div>
             </div>
         </div>
 
-        <div class="row align-items-center">
-            <div class="col-md-5 text-center mb-4 mb-md-0">
-                <img src="../assets/img/Illustration.png" class="img-fluid" alt="Illustration of a person on a podium holding a flag">
-            </div>
-
-            <div class="col-md-7">
-                <h3 class="fw-bold mb-3" style="color: #16D194;">Free Rank Predictor</h3>
-                <p class="text-secondary">
-                    Our NEET Rank Predictor is based on previous years’ score trends to help you estimate your chances of MBBS admission. Use our NEET College Predictor to explore your expected rank in NEET 2025. Your predicted rank is based on past years trends, but this year's toughness level of physics paper is higher than past 9 years so your actual NEET rank may vary, it will also depends on how many questions (if any) NTA drops.
-                </p>
-                <a href="#" class="btn btn-lg text-white mt-3 rounded-2 fw-medium" style="background-color: #16D194; border-color: #16D194; padding: 0.6rem 2rem;">
-                    Rank Predictor
-                </a>
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-3" style="color: #0d6efd;">MBBS College Predictor</h2>
+                    <p class="mb-4 text-secondary">
+                        Choosing the right medical college is really challenging task now a day's. Our NEET College Predictor help you to Find the best fit government and private MBBS colleges based on your NEET UG rank. This tool provides a list of institutions that match your score. It covers both All India Quota (AIQ) and State Quota seats, ensuring that you get the most comprehensive insights to plan your medical admissions efficiently. You can Compare up to three Colleges for better analysis of Medical colleges.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg fw-medium rounded-2 px-4 py-2" style="background-color: #0d6efd; border-color: #0d6efd;">
+                        MBBS UG Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="../assets/img/medi.png" class="img-fluid" alt="MBBS Predictor Illustration">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container py-5">
-        <div class="row align-items-center">
 
-            <div class="col-md-7 mb-4 mb-md-0">
-                <h2 class="fw-bold mb-3" style="color: #0d6efd;">MBBS College Predictor</h2>
-                <p class="mb-4 text-secondary">
-                    Choosing the right medical college is really challenging task now a day's. Our NEET College Predictor help you to Find the best fit government and private MBBS colleges based on your NEET UG rank. This tool provides a list of institutions that match your score. It covers both All India Quota (AIQ) and State Quota seats, ensuring that you get the most comprehensive insights to plan your medical admissions efficiently. You can Compare up to three Colleges for better analysis of Medical colleges.
-                </p>
-                <a href="#" class="btn btn-primary btn-lg fw-medium rounded-2 px-4 py-2" style="background-color: #0d6efd; border-color: #0d6efd;">
-                    MBBS UG Predictor
-                </a>
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="fw-bold mb-3" style="color: #16D194;">BDS College Predictor</h2>
+                    <p class="text-secondary mb-4">
+                        If you are interested in a career in Bachelor of Dental Surgery (BDS), our BDS College Predictor provides a detailed analysis of the best dental colleges in India based on your NEET UG rank. It covers both All India Quota (AIQ) and State Quota seats, ensuring that you get the most comprehensive insights to plan your dental admissions efficiently. This predictor gives you a list of government and private Dental colleges you can target, here you can compare colleges for detailed analysis.
+                    </p>
+                    <a href="#" class="btn btn-lg text-white rounded-2 fw-medium px-4 py-2" style="background-color: #16D194; border-color: #16D194;">
+                        BDS UG Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center mt-4 mb-md-0 order-md-1">
+                    <img src="../assets/img/courses-2.png" class="img-fluid" alt="BDS Predictor Illustration of a dentist and patient">
+                </div>
             </div>
-
-            <div class="col-md-5 text-center">
-                <img src="../assets/img/medi.png" class="img-fluid" alt="MBBS Predictor Illustration">
-            </div>
-
         </div>
-    </div>
 
-    <div class="container py-5">
-        <div class="row align-items-center">
-
-            <div class="col-md-5 text-center mb-4 mb-md-0">
-                <img src="../assets/img/courses-2.png" class="img-fluid" alt="BDS Predictor Illustration of a dentist and patient">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h2 class="fw-bold text-primary mb-3">Ayush College Predictor</h2>
+                    <p class="text-secondary mb-4">
+                        If you are interested in a career in Ayush Courses like BAMS, BHMS, BSMS & BUMS than our AYUSH College Predictor provides a detailed analysis of the best AYUSH colleges in India based on your NEET UG rank. It covers All India Quota (AIQ) seats, ensuring that you get the most comprehensive insights to plan your AYUSH admissions efficiently. This predictor gives you a list of government and private Ayush colleges you can target, here you can compare colleges for detailed analysis.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg rounded-2 fw-medium px-4 py-2">
+                        Ayush UG Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="../assets/img/courses-6.png" class="img-fluid" alt="Ayush professionals illustration">
+                </div>
             </div>
-            
-            <div class="col-md-7">
-                <h2 class="fw-bold mb-3" style="color: #16D194;">BDS College Predictor</h2>
-                <p class="text-secondary mb-4">
-                   If you are interested in a career in Bachelor of Dental Surgery (BDS), our BDS College Predictor provides a detailed analysis of the best dental colleges in India based on your NEET UG rank. It covers both All India Quota (AIQ) and State Quota seats, ensuring that you get the most comprehensive insights to plan your dental admissions efficiently. This predictor gives you a list of government and private Dental colleges you can target, here you can compare colleges for detailed analysis.
-                </p>
-                <a href="#" class="btn btn-lg text-white rounded-2 fw-medium px-4 py-2" style="background-color: #16D194; border-color: #16D194;">
-                    BDS UG Predictor
-                </a>
-            </div>
-
         </div>
-    </div>
 
-    <div class="container py-5">
-        <div class="row align-items-center">
-
-            <div class="col-md-7 mb-4 mb-md-0">
-                <h2 class="fw-bold text-primary mb-3">Ayush College Predictor</h2>
-                <p class="text-secondary mb-4">
-                    If you are interested in a career in Ayush Courses like BAMS, BHMS, BSMS & BUMS than our AYUSH College Predictor provides a detailed analysis of the best AYUSH colleges in India based on your NEET UG rank. It covers All India Quota (AIQ) seats, ensuring that you get the most comprehensive insights to plan your AYUSH admissions efficiently. This predictor gives you a list of government and private Ayush colleges you can target, here you can compare colleges for detailed analysis.
-                </p>
-                <a href="#" class="btn btn-primary btn-lg rounded-2 fw-medium px-4 py-2">
-                    Ayush UG Predictor
-                </a>
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="fw-bold mb-3" style="color: #16D194;">BVSC College Predictor</h2>
+                    <p class="text-secondary mb-4">
+                        If you are interested in a career in veterinary science, our BVSC College Predictor helps you predict your chances of admission to Bachelor of Veterinary Science (BVSc & AH) programs. Veterinary colleges have a separate quota system, and cut-off scores depending on state-level admissions and All India Quota seats, This predictor gives you a list of government and private veterinary colleges you can target.
+                    </p>
+                    <a href="#" class="btn btn-lg text-white rounded-2 fw-medium px-4 py-2" style="background-color: #16D194; border-color: #16D194;">
+                        BVSC UG Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center mt-4 mb-md-0 order-md-1">
+                    <img src="../assets/img/courses-1.png" class="img-fluid" alt="Veterinary professionals illustration">
+                </div>
             </div>
-
-            <div class="col-md-5 text-center">
-                <img src="../assets/img/courses-6.png" class="img-fluid" alt="Ayush professionals illustration">
-            </div>
-
         </div>
-    </div>
 
-    <div class="container py-5">
-        <div class="row align-items-center">
-
-            <div class="col-md-5 text-center mb-4 mb-md-0">
-                <img src="../assets/img/courses-1.png" class="img-fluid" alt="Veterinary professionals illustration">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-3" style="color: #0056b3;">NEET PG College Predictor</h2>
+                    <p style="color: #4a6a8a;">
+                        For medical graduates(MBBS) aiming for postgraduate medical specializations, the NEET PG College Predictor is an important tool. Based on your NEET PG rank, category, and preferred specialization, this predictor helps you shortlist MD/MS/DNB and PG Diploma programs in medical colleges across India. It covers AIQ, State Quota, and Deemed University admissions. This predictor gives you a list of all branches of government and private medical colleges you can target, here you can compare Branches and colleges for detailed analysis.
+                    </p>
+                    <a href="#" class="btn btn-lg text-white mt-3 rounded-3 fw-medium" style="background-color: #0d6efd; border-color: #0d6efd; padding: 0.7rem 2.2rem;">
+                        NEET PG Predictor
+                    </a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="../assets/img/courses-4.png" class="img-fluid" alt="Illustration of a nurse">
+                </div>
             </div>
-            
-            <div class="col-md-7">
-                <h2 class="fw-bold mb-3" style="color: #16D194;">BVSC College Predictor</h2>
-                <p class="text-secondary mb-4">
-                   If you are interested in a career in veterinary science, our BVSC College Predictor helps you predict your chances of admission to Bachelor of Veterinary Science (BVSc & AH) programs. Veterinary colleges have a separate quota system, and cut-off scores depending on state-level admissions and All India Quota seats, This predictor gives you a list of government and private veterinary colleges you can target.
-                </p>
-                <a href="#" class="btn btn-lg text-white rounded-2 fw-medium px-4 py-2" style="background-color: #16D194; border-color: #16D194;">
-                    BVSC UG Predictor
-                </a>
-            </div>
-
         </div>
-    </div>
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-md-7 mb-4 mb-md-0">
-                <h2 class="fw-bold mb-3" style="color: #0056b3;">NEET PG College Predictor</h2>
-                <p style="color: #4a6a8a;">
-                    For medical graduates(MBBS) aiming for postgraduate medical specializations, the NEET PG College Predictor is an important tool. Based on your NEET PG rank, category, and preferred specialization, this predictor helps you shortlist MD/MS/DNB and PG Diploma programs in medical colleges across India. It covers AIQ, State Quota, and Deemed University admissions. This predictor gives you a list of all branches of government and private medical colleges you can target, here you can compare Branches and colleges for detailed analysis.
-                </p>
-                <a href="#" class="btn btn-lg text-white mt-3 rounded-3 fw-medium" style="background-color: #0d6efd; border-color: #0d6efd; padding: 0.7rem 2.2rem;">
-                    NEET PG Predictor
-                </a>
-            </div>
-
-            <div class="col-md-5 text-center">
-                <img src="../assets/img/courses-4.png" class="img-fluid" alt="Illustration of a nurse">
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="package-section">
+    <section class="package-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
@@ -305,7 +320,7 @@
         </div>
     </section>
 
-  <section class="services-section" >
+    <section class="services-section">
         <div class="container">
             <h2 class="text-center mb-3" style="font-size: 48px; font-weight: 600;">Our NEET Counselling Services 2025 in Jaipur</h2>
             <p class="text-center mb-5" style="font-size: 18px; line-height: 30px; max-width: 1000px; margin: 0 auto; color: #dadcdcff;">
@@ -318,41 +333,41 @@
                     <div class="col-lg-6">
                         <div class="service-item">
                             <ul class="list-unstyled custom-checked-list">
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>NEET UG Counselling 2025 (All India Quota & All State Quota)</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>NEET PG Counselling 2025 (All India Quota & All State Quota)</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Choice Filling Assistance Based on AIQ Rank & Cutoffs</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>NEET College and Rank Prediction 2025</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Form Filling Support and Document Verification Help</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>MOP-UP & Stray Round Guidance</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Direct Communication with Our Expert Counsellors via personal</span>
-                            </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>NEET UG Counselling 2025 (All India Quota & All State Quota)</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>NEET PG Counselling 2025 (All India Quota & All State Quota)</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Choice Filling Assistance Based on AIQ Rank & Cutoffs</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>NEET College and Rank Prediction 2025</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Form Filling Support and Document Verification Help</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>MOP-UP & Stray Round Guidance</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Direct Communication with Our Expert Counsellors via personal</span>
+                                </li>
                             </ul>
                         </div>
 
                     </div>
                     <div class="col-lg-6">
                         <img src="../assets/img/image.png" class="img-fluid" alt="NEET Counselling Illustration">
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,7 +377,7 @@
         <div class="container">
             <h2 class="text-center mb-3" style="font-size: 48px; font-weight: 600;">Our medical Admission Services 2025 at Jaipur</h2>
             <p class="text-center mb-5" style="font-size: 16px;">
-            Our NEET expert counselors provide comprehensive guidance for securing 100% admissions in MBBS, BDS, BAMS, BHMS, BSMS, BUMS, BVSC and MD/MS/DNB courses in 2025. Whether it's through all India quotas, state quotas, management quotas or direct admissions, we ensure you get the best advice tailored to your needs.        
+                Our NEET expert counselors provide comprehensive guidance for securing 100% admissions in MBBS, BDS, BAMS, BHMS, BSMS, BUMS, BVSC and MD/MS/DNB courses in 2025. Whether it's through all India quotas, state quotas, management quotas or direct admissions, we ensure you get the best advice tailored to your needs.
             </p>
             <div class="row">
                 <div class="col-lg-6 mb-5 ">
@@ -418,10 +433,10 @@
             <p class="text-center mb-5" style="font-size: 18px; line-height: 30px; max-width: 1200px; margin: 0 auto; color: #dadcdcff;">
                 Our counseling services are designed to support a wide range of students, from NEET UG | PG aspirants 2025 to repeaters, parents and those who seeking budget-friendly options in India. Whether you're looking for AIQ and State Quota counselling or looking for NRI and Management quota admissions 2025, we offer personalized guidance for every need.
             </p>
-        
+
             <div class="services-box">
                 <h3 class="service-title">Our NEET Counselling Services Are Ideal For</h3>
-                <div class="row"  style="color: #333;">
+                <div class="row" style="color: #333;">
                     <div class="col-lg-6">
                         <ul class="list-unstyled custom-checked-list">
                             <li>
@@ -499,7 +514,7 @@
                     <div class="contact-info-box">
                         <div class="contact-icon">
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
                             </svg>
                         </div>
                         <p class="contact-text">9680545954</p>
@@ -508,7 +523,7 @@
                     <div class="contact-info-box">
                         <div class="contact-icon">
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
                         </div>
                         <p class="contact-text">info@v4edusolution.com</p>
@@ -542,10 +557,10 @@
             </div>
         </div>
     </section>
-  <?php
+    <?php
     include __DIR__ . '/../includes/footer.php';
-?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

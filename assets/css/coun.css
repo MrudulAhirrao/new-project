@@ -109,38 +109,57 @@
             color: #006dd3;
         }
 
-        .accordion-item {
-            border: 1px solid #ebebeb;
-            padding: 28px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
+        .why-accordion .accordion-item {
+    border: none;
+    border: 1px solid #EBEBEB;
+    padding: 28px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
 
-        .accordion-button {
-            font-weight: 600;
-            font-size: 20px;
-            color: #1b1c1d;
-            background-color: transparent;
-            box-shadow: none;
-            padding: 0;
-        }
+.why-accordion .accordion-button {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1B1C1D;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
 
-        .accordion-button:not(.collapsed) {
-            background-color: transparent;
-            color: #1b1c1d;
-        }
+.why-accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
 
-        .accordion-button::after {
-            width: 48px;
-            height: 48px;
-            background-size: 20px;
-        }
+.why-accordion .accordion-body {
+    font-size: 16px;
+    color: #6B6D70;
+    padding-bottom: 0;
+    padding-inline: 0;
+}
 
-        .accordion-body {
-            font-size: 16px;
-            color: #6b6d70;
-            padding-top: 20px;
-        }
+.why-accordion .section-heading {
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.why-accordion .section-heading .color-tag {
+    color: #006DD3;
+}
+
+.why-section .accordion-button::after {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.why-section .accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,<svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10.6396L10.64 1.99965L19.28 10.6396" stroke="black" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    transform: unset;
+}
 
         /* Predictors Section */
         .predictors-section {
@@ -302,8 +321,9 @@
         }
 
         .contact-text {
-            padding-left: 50px;
-            font-size: 30px;
+            padding-top: 10px;
+            padding-left: 7px;
+            font-size: 28px;
             color: #02386a;
             margin: 0;
         }
